@@ -2,6 +2,35 @@
 JavaFX Based On Google Cloud Translate API
 
 
+
+AIzaSyAeQL4DK5vqe8wf69KMaVlVzgfK659yD8A
+
+## Structure
+
+Translator
+│
+└───src
+    └───main
+        ├───java
+        │   └───com
+        │       └───example
+        │           └───languagetranslator
+        │               ├───controller
+        │               │   └───TranslatorController.java
+        │               ├───model
+        │               │   └───LanguageModel.java ( Didnt USed )
+        │               └───Main.java
+        │
+        └───resources
+            ├───com
+            │   └───example
+            │       └───languagetranslator
+            │               └───translator.fxml
+            └───css
+            │   └───style.css
+            └───images
+                └───Rabab.png
+
 ## Dependencies
 - JavaFX: Provides the graphical framework for building the user interface.
 - HttpClient (from `java.net.http`): Used for sending requests to the translation API.
