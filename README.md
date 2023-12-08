@@ -1,9 +1,11 @@
 # Assignment-2-Language-Translator-OBJ-
 JavaFX Based On Google Cloud Translate API
 
+Converting your HTML, CSS, and JavaScript code into a JavaFX application named `LanguageTranslator` involves several steps and detailed code writing. Given the complexity and the extent of the code, I will outline the core components and structure, but the full implementation would be too extensive for this format. Here's a structured approach for your JavaFX project:
 
-## Structure
+### Project Structure
 
+```
 LanguageTranslator
 │
 └───src
@@ -15,18 +17,19 @@ LanguageTranslator
         │               ├───controller
         │               │   └───TranslatorController.java
         │               ├───model
-        │               │   └───LanguageModel.java ( Didnt USed )
-        │               └───Main.java
+        │               │   └───LanguageModel.java
+        │               └───MainApp.java
         │
         └───resources
             ├───com
             │   └───example
             │       └───languagetranslator
+            │           └───view
             │               └───translator.fxml
             └───css
-            │   └───style.css
-            └───images
-                └───Rabab.png
+                └───style.css
+```
+
 
 ## Dependencies
 - JavaFX: Provides the graphical framework for building the user interface.
