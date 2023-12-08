@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Import JavaFX controls, layouts, and images -->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane fx:id="root" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.languagetranslator.controller.TranslatorController" stylesheets="@style.css">
+    <!-- Define the root BorderPane for the user interface -->
+
+    <!-- Top section containing application title and controls -->
+    <top>
+        <VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+            <!-- A VBox layout for organizing elements vertically -->
+
+            <!-- AnchorPane for positioning the image -->
+            <AnchorPane>
+                <ImageView>
+                    <!-- Display the application logo (replace with your actual image path) -->
+                    <image>
+                        <Image url="@../../images/Rabab.png" />
+                    </image>
+                </ImageView>
+            </AnchorPane>
+
+            <!-- Labels for the application title and creator -->
+            <Label text="Language Translator" />
+            <Label text="Created by : ⚒️🛠️ Harjot Singh ⚒️🛠️ " />
+
+            <!-- ToggleButton for switching between Dark Mode and Light Mode -->
+            <ToggleButton fx:id="darkModeToggle" text="Dark Mode" onAction="#toggleDarkMode" />
+        </VBox>
+    </top>
+
+    <!-- Center section containing language selection and translation -->
+    <center>
+        <VBox>
+            <!-- A VBox layout for organizing elements vertically -->
+
+            <!-- HBox for organizing source language, swap button, target language, and translate button horizontally -->
+            <HBox>
+                <!-- ComboBox for selecting the source language -->
+                <ComboBox fx:id="sourceLanguage" />
+
+                <!-- Button for swapping the source and target languages -->
+                <Button text="↔" onAction="#swapLanguages" />
+
+                <!-- ComboBox for selecting the target language -->
+                <ComboBox fx:id="targetLanguage" />
+
+                <!-- Button for triggering the translation -->
+                <Button text="Translate" onAction="#handleTranslateAction" />
+            </HBox>
+
+            <!-- TextArea for entering the source text -->
+            <TextArea fx:id="sourceText" promptText="Enter text" />
+
+            <!-- TextArea for displaying the translation (read-only) -->
+            <TextArea fx:id="translatedText" promptText="Translation" editable="false" />
+        </VBox>
+    </center>
+</BorderPane>

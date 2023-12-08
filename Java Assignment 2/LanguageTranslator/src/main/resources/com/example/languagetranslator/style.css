@@ -1,0 +1,104 @@
+/* General Styles */
+.root {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-padding: 20px;
+    -fx-background-color: #fbd589; /* Light mode background */
+}
+
+.label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333; /* Text color for light mode */
+    -fx-padding: 5px;
+}
+
+/* Text Area and Combo Box Styles */
+.text-area, .combo-box {
+    -fx-control-inner-background: #ffffff;
+    -fx-border-color: #2b2b2b;
+    -fx-border-radius: 4px;
+    -fx-padding: 5px;
+    -fx-padding-color:#2b2b2b ;
+    -fx-pref-height: 25px; /* Height for text areas and combo boxes */
+    -fx-text-fill:#2b2b2b;
+    -fx-prompt-text-fill: #2b2b2b; /* Prompt text color */
+}
+
+.combo-box {
+    -fx-pref-width: 150px; /* Width for language selectors */
+}
+
+/* Button Styles */
+.button {
+    -fx-background-color: #79d750;
+    -fx-text-fill: #202123;
+    -fx-border-radius: 4px;
+    -fx-pref-height: 35px; /* Height for buttons */
+    -fx-pref-width: 100px; /* Width for translate button */
+    -fx-font-size: 18px;
+
+}
+
+.swap-button { /* Swap languages button */
+    -fx-pref-width: 50px; /* Smaller width for swap button */
+}
+
+/* Toggle Button Styles */
+.toggle-button {
+    -fx-background-color: #202123; /* Light mode toggle button background */
+    -fx-background-radius: 15;
+    -fx-pref-width: 120px; /* Width for toggle button */
+    -fx-pref-height: 25px; /* Height for toggle button */
+    -fx-text-fill: #E0E0E0; /* Text color for light mode */
+}
+
+.toggle-button:selected {
+    -fx-background-color: #79d750; /* Selected toggle button background */
+    -fx-text-fill: #fff; /* Selected text color */
+}
+
+.toggle-button .thumb {
+    -fx-background-color: #2b2b2b; /* Thumb color for toggle button */
+    -fx-background-radius: 10;
+}
+
+.toggle-button:selected .thumb {
+    -fx-background-color: #202123; /* Thumb color when selected */
+}
+
+/* Spacing and Alignment */
+.vbox, .hbox {
+    -fx-spacing: 10px; /* Space between elements in a VBox and HBox */
+    -fx-padding: 0 10px; /* Padding on the left and right inside the VBox and HBox */
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    -fx-background-color: #2B2B2B; /* Dark mode background for root */
+}
+
+.dark-mode .label, .dark-mode .button, .dark-mode .toggle-button {
+    -fx-text-fill: #E0E0E0; /* Text color for dark mode */
+}
+
+.dark-mode .text-area, .dark-mode .combo-box {
+    -fx-control-inner-background: #E0E0E0; /* Background for text areas and combo boxes */
+    -fx-background-color: #fbd589;
+    -fx-prompt-text-fill: #2b2b2b; /* Prompt text color for dark mode */
+}
+
+.dark-mode .button {
+    -fx-background-color: #4B4F51; /* Button background in dark mode */
+}
+
+.dark-mode .toggle-button {
+    -fx-background-color: #79d750; /* Toggle button background in dark mode */
+    -fx-text-fill: #202123;
+}
+
+/* Additional Styling */
+.header-label, .creator-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
