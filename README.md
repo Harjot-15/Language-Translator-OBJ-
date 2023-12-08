@@ -2,12 +2,9 @@
 JavaFX Based On Google Cloud Translate API
 
 
-
-AIzaSyAeQL4DK5vqe8wf69KMaVlVzgfK659yD8A
-
 ## Structure
 
-Translator
+LanguageTranslator
 │
 └───src
     └───main
