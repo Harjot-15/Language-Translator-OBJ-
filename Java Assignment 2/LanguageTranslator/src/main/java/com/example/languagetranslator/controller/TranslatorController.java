@@ -5,13 +5,19 @@ package com.example.languagetranslator.controller;
         import javafx.scene.layout.BorderPane;
         import javafx.application.Platform;
         import java.net.http.HttpClient;
-        import java.net.http.HttpRequest;
+        import java.net.http.HttpRequest;                                         
         import java.net.http.HttpResponse;
         import java.net.URI;
         import java.util.Map;
         import java.util.HashMap;
         import org.json.JSONObject;
         import org.json.JSONArray;
+                                             //     GO TO LINE 111 TO ADD API KEY           //
+                                             //                                             //
+                                             //  TO USE THE APP YOU HAVE TO GET API NAMED   //
+                                             //  THE "GOOGLE CLOUD TRANSLATE API" THEN      //
+                                             //  ADD IT ON THE PLACE OF "API_KEY_HERE"      //
+                                             //                                             //
 
 public class TranslatorController {
 
@@ -102,7 +108,11 @@ public class TranslatorController {
         String targetLang = getKeyByValue(languageOptions, targetLanguage.getValue());
 
 
-        String apiKey = "AIzaSyAeQL4DK5vqe8wf69KMaVlVzgfK659yD8A";
+        String apiKey = "API_KEY_HERE";      //                                             //
+                                             //  TO USE THE APP YOU HAVE TO GET API NAMED   //
+                                             //  THE "GOOGLE CLOUD TRANSLATE API" THEN      //
+                                             //  ADD IT ON THE PLACE OF "API_KEY_HERE"      //
+                                             //                                             //
 
         // Build the API request URL and request body
         String url = String.format("https://translation.googleapis.com/language/translate/v2?key=%s", apiKey);
