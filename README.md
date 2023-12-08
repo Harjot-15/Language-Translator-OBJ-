@@ -18,7 +18,7 @@ LanguageTranslator
         │               │   └───TranslatorController.java
         │               ├───model
         │               │   └───LanguageModel.java
-        │               └───MainApp.java
+        │               └───Main.java
         │
         └───resources
             ├───com
@@ -27,7 +27,9 @@ LanguageTranslator
             │           └───view
             │               └───translator.fxml
             └───css
-                └───style.css
+            │   └───style.css
+            └───images
+                └───Rabab.png
 ```
 
 
