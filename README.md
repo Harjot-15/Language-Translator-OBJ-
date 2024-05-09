@@ -1,4 +1,4 @@
-# Assignment-2-Language-Translator-OBJ-
+# Language-Translator-OBJ-
 JavaFX Based On Google Cloud Translate API
 
 Converting your HTML, CSS, and JavaScript code into a JavaFX application named `LanguageTranslator` involves several steps and detailed code writing. Given the complexity and the extent of the code, I will outline the core components and structure, but the full implementation would be too extensive for this format. Here's a structured approach for your JavaFX project:
